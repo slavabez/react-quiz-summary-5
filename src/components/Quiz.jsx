@@ -23,6 +23,8 @@ const Quiz = () => {
         setSelectedAnswer(choice);
     };
 
+    console.log("form");
+
     const handleSubmit = () => {
         if (selectedAnswer === questions[currentQuestionIndex].answer) {
             setScore(score + 1);
