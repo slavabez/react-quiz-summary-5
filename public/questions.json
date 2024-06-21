@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "question": "Как передать данные в компонент React?",
+    "choices": ["Используя state", "Используя props", "Используя hooks", "Используя context"],
+    "answer": "Используя props"
+  },
+  {
+    "id": 2,
+    "question": "Как правильно использовать хук useState?",
+    "choices": ["const [count] = useState(setCount);", "const count = useState(0);", "const [count, setCount] = useState(0);", "useState([count, setCount], 0);"],
+    "answer": "const [count, setCount] = useState(0);"
+  },
+  {
+    "id": 3,
+    "question": "Что произойдет, если попытаться изменить props внутри компонента?",
+    "choices": ["props изменится", "Возникнет ошибка", "Ничего не произойдет", "state изменится"],
+    "answer": "Возникнет ошибка"
+  },
+  {
+    "id": 4,
+    "question": "Что такое props в React?",
+    "choices": ["Состояние компонента", "Свойства, передаваемые в компонент", "Функция для обновления состояния", "Метод жизненного цикла"],
+    "answer": "Свойства, передаваемые в компонент"
+  },
+  {
+    "id": 5,
+    "question": "Как изменить состояние компонента в React?",
+    "choices": ["Использовать setState", "Использовать setProps", "Использовать updateState", "Использовать updateProps"],
+    "answer": "Использовать setState"
+  },
+  {
+    "id": 6,
+    "question": "Для чего используется хук useEffect в React?",
+    "choices": ["Для управления состоянием", "Для выполнения побочных эффектов", "Для передачи данных в компонент", "Для рендеринга компонента"],
+    "answer": "Для выполнения побочных эффектов"
+  },
+  {
+    "id": 7,
+    "question": "Когда вызывается useEffect с пустым массивом зависимостей?",
+    "choices": ["Каждый раз при рендере компонента", "Только при монтировании компонента", "Только при размонтировании компонента", "Каждый раз при изменении состояния"],
+    "answer": "Только при монтировании компонента"
+  },
+  {
+    "id": 8,
+    "question": "Как указать зависимости для useEffect?",
+    "codeSnippet": "useEffect(() => { /* первый аргумент */ }, [/* второй аргумент */]);",
+    "choices": ["Передать их как первый аргумент", "Передать их как второй аргумент", "Передать их как третий аргумент", "Передать их как возвращаемое значение"],
+    "answer": "Передать их как второй аргумент"
+  },
+  {
+    "id": 9,
+    "question": "Что происходит, если не указать массив зависимостей в useEffect?",
+    "choices": ["Эффект не выполнится", "Эффект выполнится только один раз", "Эффект будет выполняться при каждом рендере", "Эффект выполнится при размонтировании компонента"],
+    "answer": "Эффект будет выполняться при каждом рендере"
+  },
+  {
+    "id": 10,
+    "question": "Как вернуть функцию очистки в useEffect?",
+    "codeSnippet": "useEffect(() => { /* первый аргумент */ return () => { /* возвращаемая функция */ }; }, [/* второй аргумент */]);",
+    "choices": ["Передать её как первый аргумент", "Передать её как второй аргумент", "Вернуть её из эффекта", "Использовать хук useCleanup"],
+    "answer": "Вернуть её из эффекта"
+  },
+  {
+    "id": 11,
+    "question": "Что произойдет, если зависимости useEffect изменятся?",
+    "choices": ["useEffect не выполнится", "useEffect выполнится снова", "Компонент размонтируется", "Состояние компонента сбросится"],
+    "answer": "useEffect выполнится снова"
+  },
+  {
+    "id": 12,
+    "question": "Когда вызывается функция очистки в useEffect?",
+    "choices": ["Только при монтировании компонента", "Только при размонтировании компонента", "При каждом рендере", "При каждом изменении зависимостей и при размонтировании"],
+    "answer": "При каждом изменении зависимостей и при размонтировании"
+  },
+  {
+    "id": 13,
+    "question": "Может ли useEffect содержать асинхронную функцию?",
+    "choices": ["Да, напрямую", "Нет, только с использованием промисов", "Да, если использовать async/await внутри эффекта", "Нет, асинхронные функции не поддерживаются"],
+    "answer": "Да, если использовать async/await внутри эффекта"
+  },
+  {
+    "id": 14,
+    "question": "Как избежать выполнения эффекта useEffect при первом рендере?",
+    "choices": ["Использовать пустой массив зависимостей", "Использовать флаг внутри эффекта", "Невозможно избежать", "Использовать условие в теле компонента"],
+    "answer": "Использовать флаг внутри эффекта"
+  },
+  {
+    "id": 15,
+    "question": "Что нужно передать в массив зависимостей useEffect, чтобы эффект выполнялся при изменении конкретного состояния?",
+    "codeSnippet": "const [count, setCount] = useState(0); \nuseEffect(() => { /* эффект */ }, [count]);",
+    "choices": ["Любое состояние", "Только нужное состояние", "Массив всех состояний", "Ничего"],
+    "answer": "Только нужное состояние"
+  },
+  {
+    "id": 16,
+    "question": "Для чего используется Context API в React?",
+    "choices": ["Для управления состоянием компонента", "Для управления глобальным состоянием", "Для работы с событиями", "Для рендеринга компонентов"],
+    "answer": "Для управления глобальным состоянием"
+  },
+  {
+    "id": 17,
+    "question": "Как создать контекст в React?",
+    "codeSnippet": "const MyContext = React.____();",
+    "choices": ["createContext", "useContext", "createState", "useState"],
+    "answer": "createContext"
+  },
+  {
+    "id": 18,
+    "question": "Как получить доступ к контексту внутри функционального компонента?",
+    "codeSnippet": "const value = React.____(MyContext);",
+    "choices": ["useState", "useEffect", "useContext", "createContext"],
+    "answer": "useContext"
+  },
+  {
+    "id": 19,
+    "question": "Что необходимо сделать, чтобы предоставить контекст компоненту?",
+    "codeSnippet": "<MyContext.____ value={значение}> <Component /> </MyContext.____>",
+    "choices": ["Provider, Provider", "Provider, Consumer", "Consumer, Provider", "Consumer, Consumer"],
+    "answer": "Provider, Provider"
+  },
+  {
+    "id": 20,
+    "question": "Как изменить значение контекста?",
+    "choices": ["Использовать хук useState", "Использовать хук useContext", "Изменить значение в Provider", "Невозможно изменить значение"],
+    "answer": "Изменить значение в Provider"
+  },
+  {
+    "id": 21,
+    "question": "Можно ли использовать несколько контекстов в одном компоненте?",
+    "choices": ["Да", "Нет"],
+    "answer": "Да"
+  },
+  {
+    "id": 22,
+    "question": "Что произойдет, если не указать Provider для контекста?",
+    "choices": ["Будет ошибка", "Будет использовано значение по умолчанию", "Контекст не будет доступен", "Ничего не произойдет"],
+    "answer": "Будет использовано значение по умолчанию"
+  },
+  {
+    "id": 23,
+    "question": "Можно ли передавать функции через контекст?",
+    "choices": ["Да", "Нет"],
+    "answer": "Да"
+  },
+  {
+    "id": 24,
+    "question": "Как создать форму с использованием react-hook-form?",
+    "codeSnippet": "const { handleSubmit, ____ } = useForm();",
+    "choices": ["register", "useFieldArray", "useWatch", "reset"],
+    "answer": "register"
+  },
+  {
+    "id": 25,
+    "question": "Как обработать отправку формы с использованием react-hook-form?",
+    "codeSnippet": "const onSubmit = data => console.log(data);\n<form onSubmit={____(onSubmit)}>",
+    "choices": ["handleSubmit", "onSubmit", "submit", "register"],
+    "answer": "handleSubmit"
+  },
+  {
+    "id": 26,
+    "question": "Как задать значения по умолчанию для полей формы?",
+    "codeSnippet": "const { register, handleSubmit, ____ } = useForm({ ____ : { firstName: 'John' } });",
+    "choices": ["setValue", "watch", "reset", "defaultValues"],
+    "answer": "defaultValues"
+  },
+  {
+    "id": 27,
+    "question": "Как сбросить значения формы до значений по умолчанию?",
+    "codeSnippet": "const { reset } = useForm();\n<button type='button' onClick={() => ____()}>Reset</button>",
+    "choices": ["reset", "clear", "default", "setValue"],
+    "answer": "reset"
+  },
+  {
+    "id": 28,
+    "question": "Как получить текущее значение поля формы?",
+    "codeSnippet": "const { register, watch } = useForm(); const value = ____('fieldName');",
+    "choices": ["watch", "getValue", "observe", "fieldValue"],
+    "answer": "watch"
+  },
+  {
+    "id": 29,
+    "question": "Как можно получить все значения полей формы?",
+    "codeSnippet": "const { register, handleSubmit, ____ } = useForm();\nconst values = ____();",
+    "choices": ["getValues", "getAll", "watchAll", "register"],
+    "answer": "getValues"
+  },
+  {
+    "id": 30,
+    "question": "Как отключить поле формы с использованием react-hook-form?",
+    "codeSnippet": "<input {...register('email')} ____ />",
+    "choices": ["disabled", "disable", "inactive", "readonly"],
+    "answer": "disabled"
+  }
+]
